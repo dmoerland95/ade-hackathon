@@ -1,1 +1,1 @@
-export demo from './demo';
+export { default as user } from './user';
