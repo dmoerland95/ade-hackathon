@@ -1,0 +1,22 @@
+{
+  "extends": "react-app",
+  "settings": {
+    "import/resolver": {
+      "webpack": { "config": "webpack.config.base.js" }
+    }
+  },
+  "globals": {
+    "__DEV__": false,
+    "__ACC__": false,
+    "__PROD__": false,
+    "__CLIENT__": false,
+    "__SERVER__": false
+  },
+  "rules": {
+    "arrow-parens": 2,
+    "no-console": [2, { "allow": ["info", "error"]}],
+    "semi": ["error", "always"],
+    "react/prop-types": 2,
+    "react/no-unused-prop-types": 2
+  }
+}
