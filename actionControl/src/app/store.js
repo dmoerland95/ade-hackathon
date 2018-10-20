@@ -6,7 +6,7 @@ import { reduxFirestore, firestoreReducer } from 'redux-firestore'
 import firebase from 'firebase'
 
 const firebaseConfig = {
-  apiKey: "",
+  apiKey: "AIzaSyC-suwfwRhG76jB0KaW6Qoi7oJPl071veg",
   authDomain: "ade-hack.firebaseapp.com",
   databaseURL: "https://ade-hack.firebaseio.com",
   projectId: "ade-hack",

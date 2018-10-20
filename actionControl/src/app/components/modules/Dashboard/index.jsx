@@ -61,7 +61,10 @@ const Dashboard = ({ actions, firestore, user }) => {
 export default compose(
     firestoreConnect(['actions', 'users']),
     connect(state => ({
-        actions: state.firestore.ordered.actions || [],
+        actions: Array.isArray(state.firestore.ordered.actions)
+            ? state.firestore.ordered.actions
+                .filter(action => action.type !== 'custom' && !!action.label)
+            : [],
         user: Array.isArray(state.firestore.ordered.users)
             ? state.firestore.ordered.users.slice(-1)[0]
             : {}
