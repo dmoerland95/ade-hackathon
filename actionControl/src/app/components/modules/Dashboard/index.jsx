@@ -66,7 +66,9 @@ export default compose(
                 .filter(action => action.type !== 'custom' && !!action.label)
             : [],
         user: Array.isArray(state.firestore.ordered.users)
-            ? state.firestore.ordered.users.slice(-1)[0]
+            ? state.firestore.ordered.users
+                .sort((a, b) => a.id - b.id)
+                .slice(-1)[0]
             : {}
     }))
 )(Dashboard)
