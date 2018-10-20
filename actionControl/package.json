@@ -31,17 +31,22 @@
     "@babel/polyfill": "^7.0.0",
     "compression": "^1.7.3",
     "express": "^4.16.3",
+    "firebase": "^5.5.5",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.11",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
+    "react-redux-firebase": "^2.1.8",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "recompose": "^0.30.0",
     "redux": "^4.0.0",
+    "redux-firestore": "^0.5.8",
     "redux-thunk": "^2.3.0",
-    "styled-components": "^3.4.9"
+    "styled-components": "^3.4.9",
+    "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
